@@ -15,6 +15,7 @@ import Coursel1 from '../pages/Coursel/Coursel1';
 import YoutubeMain from '../pages/YoutubeMain/YoutubeMain';
 import ProdukState from '../pages/ProdukState/ProdukState';
 import ProductStateContex from '../pages/ProductStateContex/ProductStateContex';
+import Hooks from '../pages/Hooks/Hooks';
 
 export const rootContex= createContext();
 const Provider = rootContex.Provider;
@@ -64,6 +65,7 @@ export default class Home extends Component {
               <Nav.Link href="/produkstatecontex">ProdukStatecontex</Nav.Link>
               <Nav.Link href="/blog">Blog</Nav.Link>
               <Nav.Link href="/youtube">Youtube</Nav.Link>
+              <Nav.Link href="/hooks">Hooks</Nav.Link>
               <NavDropdown title="Mamber" id="nav-dropdown">
             <NavDropdown.Item eventKey="4.1">Login</NavDropdown.Item>
             <NavDropdown.Item eventKey="4.2">Register</NavDropdown.Item>
@@ -80,6 +82,9 @@ export default class Home extends Component {
         <Route path='/produkstatecontex'  component={ProductStateContex} />
         <Route path='/blog' component={BlogPost} />
         <Route path='/youtube' component={YoutubeMain} />
+        <Route path='/hooks' component={Hooks} />
+
+       
 
         </Fragment>
         </Provider>

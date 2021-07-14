@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import './Post.css'
 
  const Post=(props)=>{
     
@@ -13,6 +14,7 @@ import React, { Fragment } from 'react'
                 <p className='title'>{props.title}</p>
                 <p className='desc'>{props.desc}</p>
                 <button className='remove' onClick={props.delethandler}>remove</button>
+                <button className='update' onClick={props.updatehandler}>update</button>
                 
             </div>
 
